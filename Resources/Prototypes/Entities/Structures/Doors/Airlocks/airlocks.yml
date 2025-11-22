@@ -207,6 +207,43 @@
   - type: Wires
     layoutId: AirlockCommand
 
+# new mercenaries airlock standart
+- type: entity
+  parent: Airlock
+  id: AirlockMercenaries
+  suffix: Mercenaries
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+
+# new mercenaries airlock standart commander
+- type: entity
+  parent: Airlock
+  id: AirlockMercenariesCommander
+  suffix: Mercenaries
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries_commander.rsi
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+  - type: Wires
+    layoutId: AirlockCommand
+
+# new mercenaries airlock standart sergeant
+- type: entity
+  parent: Airlock
+  id: AirlockMercenariesSergeant
+  suffix: Mercenaries
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries_sergeant.rsi
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+  - type: Wires
+    layoutId: AirlockCommand
+
 - type: entity
   parent: Airlock
   id: AirlockSecurity
@@ -375,6 +412,17 @@
     sprite: Structures/Doors/Airlocks/Glass/command.rsi
   - type: WiresPanelSecurity
     securityLevel: medSecurity
+  - type: Wires
+    layoutId: AirlockCommand
+
+# mercenaries new airlock glass
+- type: entity
+  parent: AirlockGlass
+  id: AirlockGlassMercenaries
+  suffix: Mercenaries
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/mercenaries.rsi
   - type: Wires
     layoutId: AirlockCommand
 
