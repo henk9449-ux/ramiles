@@ -46,6 +46,7 @@
 # SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 # SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 <Aboba>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -332,3 +333,13 @@
     damageCoefficient: 0.1
   #- type: Tag # Goobstation - Fuck you
   #  tags: [] # ignore "WhitelistChameleon" tag
+
+#new mercenaries
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelMercenaries
+  name: mercenaries duffel bag
+  description: A large duffel bag for holding extra guns and supplies.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Duffels/mercenaries.rsi

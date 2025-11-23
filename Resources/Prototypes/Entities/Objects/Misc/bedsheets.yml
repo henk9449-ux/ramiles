@@ -90,6 +90,7 @@
 # SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 wafehling <wafehling@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 <Aboba>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -456,3 +457,38 @@
     state: sheetyellow
   - type: Clothing
     sprite: Clothing/Neck/Bedsheets/yellow.rsi
+
+#new militari
+
+- type: entity
+  id: BedsheetMilitaryBlue
+  parent: BedsheetBase
+  name: military blue bedsheet
+  description: |
+    military blue bedsheet
+    it's itchy
+  components:
+  - type: Sprite
+    state: sheetMilitaryBlue
+  - type: Clothing
+    sprite: Clothing/Neck/Bedsheets/military_blue.rsi
+
+- type: entity
+  id: BedsheetCommander
+  parent: BedsheetBase
+  name: commander bedsheet
+  components:
+  - type: Sprite
+    state: sheetCommander
+  - type: Clothing
+    sprite: Clothing/Neck/Bedsheets/commander.rsi
+
+- type: entity
+  id: BedsheetSergeant
+  parent: BedsheetBase
+  name: Sergeant bedsheet
+  components:
+  - type: Sprite
+    state: sheetSergeant
+  - type: Clothing
+    sprite: Clothing/Neck/Bedsheets/sergeant.rsi

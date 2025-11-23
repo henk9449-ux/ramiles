@@ -109,6 +109,15 @@
     },
     {
       "name": "sheetyellow"
+    },
+    {
+      "name": "sheetMilitaryBlue"
+    },
+    {
+      "name": "sheetSergeant"
+    },
+    {
+      "name": "sheetCommander"
     }
   ]
 }
