@@ -232,6 +232,15 @@
     {
       "name": "pda-seniorofficer"
     },
+     {
+      "name": "pda-soldier"
+    },
+     {
+      "name": "pda-sergeant"
+    },
+     {
+      "name": "pda-commander"
+    },
 	{
       "name": "pda-wizard",
       "delays": [

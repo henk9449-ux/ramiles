@@ -1735,3 +1735,62 @@
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
+
+# new mercenaries PDAs
+
+- type: entity
+  parent: BasePDA
+  id: SoldierPDA
+  name: soldier PDA
+  description: looks shabby
+  components:
+  - type: Pda
+    id: CaptainIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-soldier
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentVColor: "#447987"
+  - type: Icon
+    state: pda-soldier
+
+- type: entity
+  parent: BasePDA
+  id: SergeantPDA
+  name: sergeant PDA
+  description: regular sergeant's PDA
+  components:
+  - type: Pda
+    id: CaptainIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-sergeant
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentVColor: "#447987"
+  - type: Icon
+    state: pda-sergeant
+
+- type: entity
+  parent: BasePDA
+  id: CommanderPDA
+  name: commander PDA
+  description: shiny commander PDA
+  components:
+  - type: Pda
+    id: CaptainIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-commander
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentVColor: "#447987"
+  - type: Icon
+    state: pda-commander
