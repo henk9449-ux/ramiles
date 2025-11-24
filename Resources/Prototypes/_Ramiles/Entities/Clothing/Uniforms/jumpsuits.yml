@@ -1,0 +1,30 @@
+# SPDX-FileCopyrightText: 2025 <Aboba>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSoldier
+  name: soldier jumpsuit
+  description: .
+  components:
+  - type: Sprite
+    sprite: _Ramiles/Clothing/Uniforms/Jumpsuit/soldier.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCommander
+  name: commander jumpsuit
+  description: .
+  components:
+  - type: Sprite
+    sprite: _Ramiles/Clothing/Uniforms/Jumpsuit/commander.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSergeant
+  name: sergeant jumpsuit
+  description: .
+  components:
+  - type: Sprite
+    sprite: _Ramiles/Clothing/Uniforms/Jumpsuit/sergeant.rsi
