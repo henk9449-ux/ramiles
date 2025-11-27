@@ -4,27 +4,63 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitSoldier
+  id: ClothingUniformJumpsuitMercenarySoldier
   name: soldier jumpsuit
-  description: .
+  description: regular soldier jumpsuit
   components:
   - type: Sprite
     sprite: _Ramiles/Clothing/Uniforms/Jumpsuit/soldier.rsi
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitCommander
+  id: ClothingUniformJumpsuitMercenaryRecruit
+  name: recruit jumpsuit
+  description: regular recruit jumpsuit
+  components:
+  - type: Sprite
+    sprite: _Ramiles/Clothing/Uniforms/Jumpsuit/recruit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMercenaryCommander
   name: commander jumpsuit
-  description: .
+  description: commander jumpsuit
   components:
   - type: Sprite
     sprite: _Ramiles/Clothing/Uniforms/Jumpsuit/commander.rsi
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitSergeant
+  id: ClothingUniformJumpsuitMercenarySergeant
   name: sergeant jumpsuit
-  description: .
+  description: sergeant jumpsuit
   components:
   - type: Sprite
     sprite: _Ramiles/Clothing/Uniforms/Jumpsuit/sergeant.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMercenaryScientist
+  name: scientist jumpsuit
+  description: scientist jumpsuit
+  components:
+  - type: Sprite
+    sprite: _Ramiles/Clothing/Uniforms/Jumpsuit/scientist.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMercenaryMedic
+  name: medic jumpsuit
+  description: medic jumpsuit
+  components:
+  - type: Sprite
+    sprite: _Ramiles/Clothing/Uniforms/Jumpsuit/medic.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMercenaryEngineer
+  name:  engineer jumpsuit
+  description: engineer jumpsuit
+  components:
+  - type: Sprite
+    sprite: _Ramiles/Clothing/Uniforms/Jumpsuit/engineer.rsi

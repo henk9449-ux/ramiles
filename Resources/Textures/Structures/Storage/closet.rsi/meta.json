@@ -603,6 +603,39 @@
         },
         {
             "name": "representative_door"
+        },
+        {
+            "name": "m_commander_door"
+        },
+        {
+            "name": "m_unlocked"
+        },
+        {
+            "name": "m_welded"
+        },
+        {
+            "name": "m_locked"
+        },
+        {
+            "name": "m_generic_door"
+        },
+        {
+            "name": "m_generic"
+        },
+        {
+            "name": "m_soldier_door"
+        },
+        {
+            "name": "m_sergeant_door"
+        },
+        {
+            "name": "m_open"
+        },
+        {
+            "name": "m_sci_door"
+        },
+        {
+            "name": "m_sci"
         }
     ]
 }
