@@ -658,3 +658,60 @@
     stateBaseClosed: hop
     stateDoorOpen: hop_open
     stateDoorClosed: representative_door
+
+# new mercenary lockers
+- type: entity
+  id: LockerMercenaryCommander
+  parent: LockerBaseSecure
+  name: commander locker
+  description:
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["Security"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: m_sci
+    stateDoorOpen: m_open
+    stateDoorClosed: m_commander_door
+
+- type: entity
+  id: LockerMerccenarySergeant
+  parent: LockerBaseSecure
+  name: sergeant locker
+  description:
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["Security"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: m_sci
+    stateDoorOpen: m_open
+    stateDoorClosed: m_sergeant_door
+
+- type: entity
+  id: LockerMercenaryScientist
+  parent: LockerBaseSecure
+  name: scientist locker
+  description: scientist locker
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["Security"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: m_sci
+    stateDoorOpen: m_open
+    stateDoorClosed: m_sci_door
+
+- type: entity
+  id: LockerMercenarySoldier
+  parent: LockerBaseSecure
+  name: soldier locker
+  description: soldier locker
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["Security"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: m_sci
+    stateDoorOpen: m_open
+    stateDoorClosed: m_soldier_door
