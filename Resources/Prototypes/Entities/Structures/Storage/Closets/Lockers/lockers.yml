@@ -670,7 +670,7 @@
   - type: AccessReader
     access: [["Security"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: m_sci
+    stateBaseClosed: m_command
     stateDoorOpen: m_open
     stateDoorClosed: m_commander_door
 
@@ -684,7 +684,7 @@
   - type: AccessReader
     access: [["Security"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: m_sci
+    stateBaseClosed: m_sergeant
     stateDoorOpen: m_open
     stateDoorClosed: m_sergeant_door
 

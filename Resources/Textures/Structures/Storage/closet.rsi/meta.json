@@ -636,6 +636,12 @@
         },
         {
             "name": "m_sci"
+        },
+        {
+            "name": "m_command"
+        },
+        {
+            "name": "m_sergeant"
         }
     ]
 }
