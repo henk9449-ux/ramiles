@@ -276,6 +276,33 @@
     {
       "name": "green-inhand-right",
       "directions": 4
+    },
+    {
+      "name": "m_default"
+    },
+    {
+      "name": "m_id_soldier"
+    },
+    {
+      "name": "m_id-commander"
+    },
+    {
+      "name": "m_default-inhand-right"
+    },
+    {
+      "name": "m_default-inhand-left"
+    },
+    {
+      "name": "m_id-scientist"
+    },
+    {
+      "name": "m_id-recruit"
+    },
+    {
+      "name": "m_id-medic"
+    },
+    {
+      "name": "m_id-engineer"
     }
   ]
 }
