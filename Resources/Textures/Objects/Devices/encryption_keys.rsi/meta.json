@@ -36,6 +36,18 @@
     {"name": "service_label"},
     {"name": "synd_label"},
     {"name": "borg_label"},
-    {"name": "ai_label"}
+    {"name": "ai_label"},
+    {"name": "m_engineer_label"},
+    {"name": "m_crypt_engi"},
+    {"name": "m_crypt_com_ser"},
+    {"name": "m_com_ser_label"},
+    {"name": "m_medic_label"},
+    {"name": "m_crypt_med"},
+    {"name": "m_sol_rec_label"},
+    {"name": "m_crypt_sol_rec"},
+    {"name": "m_crypt_sci"},
+    {"name": "m_scientist_label"},
+    {"name": "m_expedition_label"},
+    {"name": "m_crypt_gray"}
   ]
 }

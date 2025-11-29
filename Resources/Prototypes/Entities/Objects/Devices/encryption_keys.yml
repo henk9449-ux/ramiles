@@ -379,3 +379,117 @@
       layers:
         - state: crypt_rusted
         - state: pirate_label
+
+# new mercenary keys
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyMercenary
+  name: mercenary encryption key
+  description: An encryption key used by mercenaries.
+  components:
+    - type: EncryptionKey
+      channels:
+        - Mercenary
+      defaultChannel: Mercenary
+    - type: Sprite
+      layers:
+        - state: m_crypt_gray
+        - state: m_expedition_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyMercenaryEngineer
+  name: mercenary engineers encryption key
+  description: An encryption key used by mercenary engineers.
+  components:
+    - type: EncryptionKey
+      channels:
+        - ExEngineering
+      defaultChannel: ExEngineering
+    - type: Sprite
+      layers:
+        - state: m_crypt_engi
+        - state: m_engineer_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyMercenaryCommand
+  name: mercenary command encryption key
+  description: An encryption key used by mercenary commanders.
+  components:
+    - type: EncryptionKey
+      channels:
+        - ExCommand
+      defaultChannel: ExCommand
+    - type: Sprite
+      layers:
+        - state: m_crypt_com_ser
+        - state: m_com_ser_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyMercenaryMedic
+  name: mercenary medical encryption key
+  description: An encryption key used by mercenary medical.
+  components:
+    - type: EncryptionKey
+      channels:
+        - ExMedical
+      defaultChannel: ExMedical
+    - type: Sprite
+      layers:
+        - state: m_crypt_med
+        - state: m_medic_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyMercenarySecurity
+  name: mercenary security encryption key
+  description: An encryption key used by mercenary security.
+  components:
+    - type: EncryptionKey
+      channels:
+        - ExSecurity
+      defaultChannel: ExSecurity
+    - type: Sprite
+      layers:
+        - state: m_crypt_sol_rec
+        - state: m_sol_rec_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyMercenaryScience
+  name: mercenary science encryption key
+  description: An encryption key used by mercenary scientists.
+  components:
+    - type: EncryptionKey
+      channels:
+        - ExScience
+      defaultChannel: ExScience
+    - type: Sprite
+      layers:
+        - state: m_crypt_sci
+        - state: m_scientist_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyMercenaryMaster
+  name: mercenary master encryption key
+  description: An encryption key used by mercenary.
+  components:
+    - type: EncryptionKey
+      channels:
+        - ExMedical
+        - Mercenary
+        - ExEngineering
+        - ExSecurity
+        - ExScience
+        - ExCommand
+      defaultChannel: ExCommand
+    - type: Sprite
+      layers:
+        - state: m_crypt_gray
+        - state: m_com_ser_label
+
+

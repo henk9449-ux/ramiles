@@ -642,6 +642,15 @@
         },
         {
             "name": "m_sergeant"
+        },
+        {
+            "name": "m_engineer"
+        },
+        {
+            "name": "m_engi_door"
+        },
+        {
+            "name": "m_engi_open"
         }
     ]
 }
