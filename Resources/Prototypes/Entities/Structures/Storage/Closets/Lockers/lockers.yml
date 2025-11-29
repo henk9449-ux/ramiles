@@ -670,7 +670,7 @@
   - type: AccessReader
     access: [["Security"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: m_sci
+    stateBaseClosed: m_command
     stateDoorOpen: m_open
     stateDoorClosed: m_commander_door
 
@@ -684,7 +684,7 @@
   - type: AccessReader
     access: [["Security"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: m_sci
+    stateBaseClosed: m_sergeant
     stateDoorOpen: m_open
     stateDoorClosed: m_sergeant_door
 
@@ -715,3 +715,17 @@
     stateBaseClosed: m_sci
     stateDoorOpen: m_open
     stateDoorClosed: m_soldier_door
+
+- type: entity
+  id: LockerMercenaryEngineer
+  parent: LockerBaseSecure
+  name: engineer locker
+  description: engineer locker
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["Security"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: m_engineer
+    stateDoorOpen: m_engi_open
+    stateDoorClosed: m_engi_door

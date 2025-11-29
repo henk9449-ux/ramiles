@@ -1074,3 +1074,77 @@
     interfaces:
       enum.AgentIDCardUiKey.Key:
         type: AgentIDCardBoundUserInterface
+
+# new mercenary id cards
+
+- type: entity
+  parent: PassengerIDCard
+  id: MercenaryRecruitIDCard
+  name: recruit ID card
+  components:
+  - type: PresetIdCard
+    job: MercenaryRecruit
+  - type: Sprite
+    layers:
+    - state: m_default
+    - state: m_id-recruit
+
+- type: entity
+  parent: PassengerIDCard
+  id: MercenarySoldierIDCard
+  name: soldier ID card
+  components:
+  - type: PresetIdCard
+    job: MercenarySoldier
+  - type: Sprite
+    layers:
+    - state: m_default
+    - state: m_id_soldier
+
+- type: entity
+  parent: PassengerIDCard
+  id: MercenaryCommanderIDCard
+  name: commander ID card
+  components:
+  - type: PresetIdCard
+    job: MercenaryCommander
+  - type: Sprite
+    layers:
+    - state: m_default
+    - state: m_id-commander
+
+- type: entity
+  parent: PassengerIDCard
+  id: MercenaryScientistIDCard
+  name: scientist ID card
+  components:
+  - type: PresetIdCard
+    job: MercenaryScientist
+  - type: Sprite
+    layers:
+    - state: m_default
+    - state: m_id-scientist
+
+- type: entity
+  parent: PassengerIDCard
+  id: MercenaryMedicIDCard
+  name: medic ID card
+  components:
+  - type: PresetIdCard
+    job: MercenaryMedic
+  - type: Sprite
+    layers:
+    - state: m_default
+    - state: m_id-medic
+
+- type: entity
+  parent: PassengerIDCard
+  id: MercenaryEngineerIDCard
+  name: engineer ID card
+  components:
+  - type: PresetIdCard
+    job: MercenaryEngineer
+  - type: Sprite
+    layers:
+    - state: m_default
+    - state: m_id-engineer

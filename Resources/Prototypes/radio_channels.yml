@@ -168,3 +168,48 @@
   color: "#ff2222"
   # long range since I don't wanna make a special xenoborg telecomm server
   longRange: true
+
+# new mercanary radio channels
+
+- type: radioChannel
+  id: Mercenary
+  name: Mercenary
+  keycode: 'w'
+  frequency: 3001
+  color: "#2cdb2c"
+
+- type: radioChannel
+  id: ExEngineering
+  name: ExEngineering
+  keycode: 'r'
+  frequency: 3022
+  color: "#ad5211"
+
+- type: radioChannel
+  id: ExCommand
+  name: ExCommand
+  keycode: 'p'
+  frequency: 3033
+  color: "#e3cc1b"
+
+- type: radioChannel
+  id: ExMedical
+  name: ExMedical
+  keycode: 'i'
+  frequency: 3044
+  color: "#0660cf"
+
+- type: radioChannel
+  id: ExSecurity
+  name: ExSecurity
+  keycode: 'd'
+  frequency: 3055
+  color: "#c21919"
+
+- type: radioChannel
+  id: ExScience
+  name: ExScience
+  keycode: 'l'
+  frequency: 3066
+  color: "#a310a3"
+
