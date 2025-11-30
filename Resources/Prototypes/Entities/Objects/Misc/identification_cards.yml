@@ -145,6 +145,7 @@
 # SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 # SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 <Aboba>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -1083,7 +1084,11 @@
   name: recruit ID card
   components:
   - type: PresetIdCard
-    job: MercenaryRecruit
+    job: ExRecruit
+  - type: Access
+    tags:
+    - Mercenary
+    - ExRecruit
   - type: Sprite
     layers:
     - state: m_default
@@ -1095,7 +1100,12 @@
   name: soldier ID card
   components:
   - type: PresetIdCard
-    job: MercenarySoldier
+    job: ExSoldier
+  - type: Access
+    tags:
+    - Mercenary
+    - ExRecruit
+    - ExSoldier
   - type: Sprite
     layers:
     - state: m_default
@@ -1107,7 +1117,35 @@
   name: commander ID card
   components:
   - type: PresetIdCard
-    job: MercenaryCommander
+    job: Commander
+  - type: Access
+    tags:
+    - Commander
+    - Sergeant
+    - Mercenary
+    - ExScientist
+    - ExSoldier
+    - ExRecruit
+    - ExEngineer
+    - ExMedic
+  - type: Sprite
+    layers:
+    - state: m_default
+    - state: m_id-commander
+
+- type: entity
+  parent: PassengerIDCard
+  id: MercenarySergeantIDCard
+  name: sergeant ID card
+  components:
+  - type: PresetIdCard
+    job: Sergeant
+  - type: Access
+    tags:
+    - Mercenary
+    - ExRecruit
+    - ExSoldier
+    - Sergeant
   - type: Sprite
     layers:
     - state: m_default
@@ -1119,7 +1157,11 @@
   name: scientist ID card
   components:
   - type: PresetIdCard
-    job: MercenaryScientist
+    job: ExScientist
+  - type: Access
+    tags:
+    - Mercenary
+    - ExScientist
   - type: Sprite
     layers:
     - state: m_default
@@ -1131,7 +1173,11 @@
   name: medic ID card
   components:
   - type: PresetIdCard
-    job: MercenaryMedic
+    job: ExMedic
+  - type: Access
+    tags:
+    - Mercenary
+    - ExMedic
   - type: Sprite
     layers:
     - state: m_default
@@ -1143,7 +1189,11 @@
   name: engineer ID card
   components:
   - type: PresetIdCard
-    job: MercenaryEngineer
+    job: ExEngineer
+  - type: Access
+    tags:
+    - Mercenary
+    - ExEngineer
   - type: Sprite
     layers:
     - state: m_default

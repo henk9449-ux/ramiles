@@ -1,0 +1,45 @@
+# SPDX-FileCopyrightText: 2025 <Aboba>
+
+- type: accessLevel
+  id: Commander
+  name: Commander
+
+- type: accessLevel
+  id: Sergeant
+  name: Sergeant
+
+- type: accessLevel
+  id: Mercenary
+  name: Mercenary
+
+- type: accessLevel
+  id: ExScientist
+  name: ExScientist
+
+- type: accessLevel
+  id: ExSoldier
+  name: ExSoldier
+
+- type: accessLevel
+  id: ExRecruit
+  name: ExRecruit
+
+- type: accessLevel
+  id: ExEngineer
+  name: ExEngineer
+
+- type: accessLevel
+  id: ExMedic
+  name: ExMedic
+
+- type: accessGroup
+  id: Expedition
+  tags:
+  - Commander
+  - Sergeant
+  - Mercenary
+  - ExScientist
+  - ExSoldier
+  - ExRecruit
+  - ExEngineer
+  - ExMedic

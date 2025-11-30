@@ -98,6 +98,7 @@
 # SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 <Aboba>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -202,43 +203,6 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/command.rsi
-  - type: WiresPanelSecurity
-    securityLevel: medSecurity
-  - type: Wires
-    layoutId: AirlockCommand
-
-# new mercenaries airlock standart
-- type: entity
-  parent: Airlock
-  id: AirlockMercenaries
-  suffix: Mercenaries
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mercenaries.rsi
-  - type: Wires
-    layoutId: AirlockCommand
-
-# new mercenaries airlock standart commander
-- type: entity
-  parent: Airlock
-  id: AirlockMercenariesCommander
-  suffix: Mercenaries
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mercenaries_commander.rsi
-  - type: WiresPanelSecurity
-    securityLevel: medSecurity
-  - type: Wires
-    layoutId: AirlockCommand
-
-# new mercenaries airlock standart sergeant
-- type: entity
-  parent: Airlock
-  id: AirlockMercenariesSergeant
-  suffix: Mercenaries
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mercenaries_sergeant.rsi
   - type: WiresPanelSecurity
     securityLevel: medSecurity
   - type: Wires
@@ -415,17 +379,6 @@
   - type: Wires
     layoutId: AirlockCommand
 
-# mercenaries new airlock glass
-- type: entity
-  parent: AirlockGlass
-  id: AirlockGlassMercenaries
-  suffix: Mercenaries
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/mercenaries.rsi
-  - type: Wires
-    layoutId: AirlockCommand
-
 - type: entity
   parent: AirlockGlass
   id: AirlockSecurityGlass
@@ -469,3 +422,107 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Glass/basic.rsi
+
+# new mercenaries airlock standart
+- type: entity
+  parent: Airlock
+  id: AirlockMercenaries
+  suffix: Mercenary
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+
+# new mercenaries airlock engineers
+- type: entity
+  parent: Airlock
+  id: AirlockMercenariesEngineer
+  suffix: ExEngineer
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+
+# new mercenaries airlock standart commander
+- type: entity
+  parent: Airlock
+  id: AirlockMercenariesCommander
+  suffix: Commander
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries_commander.rsi
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+  - type: Wires
+    layoutId: AirlockCommand
+
+# new mercenaries airlock standart sergeant
+- type: entity
+  parent: Airlock
+  id: AirlockMercenariesSergeant
+  suffix: Sergeant
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries_sergeant.rsi
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+  - type: Wires
+    layoutId: AirlockCommand
+
+# mercenaries new airlock glass
+- type: entity
+  parent: AirlockGlass
+  id: AirlockGlassMercenaries
+  suffix: Mercenary
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/mercenaries.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+
+# new mercenaries scientist standart
+- type: entity
+  parent: Airlock
+  id: AirlockMercenariesScientist
+  suffix: Scientist
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+
+# new mercenaries medic standart
+- type: entity
+  parent: Airlock
+  id: AirlockMercenariesMedic
+  suffix: Medic
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+
+# new mercenaries soldier standart
+- type: entity
+  parent: Airlock
+  id: AirlockMercenariesSoldier
+  suffix: Soldier
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+
+# new mercenaries recruit standart
+- type: entity
+  parent: Airlock
+  id: AirlockMercenariesRecruit
+  suffix: Recruit
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+

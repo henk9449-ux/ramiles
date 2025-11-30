@@ -1745,7 +1745,83 @@
   description: looks shabby
   components:
   - type: Pda
-    id: CaptainIDCard
+    id: MercenarySoldierIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-soldier
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentVColor: "#447987"
+  - type: Icon
+    state: pda-soldier
+
+- type: entity
+  parent: BasePDA
+  id: ExEngineerPDA
+  name: mercenary engineer PDA
+  description: regular engineer's PDA
+  components:
+  - type: Pda
+    id: MercenaryEngineerIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-engineer
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentVColor: "#447987"
+  - type: Icon
+    state: pda-soldier
+
+- type: entity
+  parent: BasePDA
+  id: ExRecruitPDA
+  name: mercenary recruit PDA
+  description: regular recruit's PDA
+  components:
+  - type: Pda
+    id: MercenaryRecruitIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-soldier
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentVColor: "#447987"
+  - type: Icon
+    state: pda-soldier
+
+- type: entity
+  parent: BasePDA
+  id: ExScientistPDA
+  name: mercenary scientist PDA
+  description: regular scientist's PDA
+  components:
+  - type: Pda
+    id: MercenaryScientistIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-soldier
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentVColor: "#447987"
+  - type: Icon
+    state: pda-soldier
+
+- type: entity
+  parent: BasePDA
+  id: ExMedicPDA
+  name: mercenary medic PDA
+  description: regular medic's PDA
+  components:
+  - type: Pda
+    id: MercenaryMedicIDCard
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1764,7 +1840,7 @@
   description: regular sergeant's PDA
   components:
   - type: Pda
-    id: CaptainIDCard
+    id: MercenarySergeantIDCard
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1783,7 +1859,7 @@
   description: shiny commander PDA
   components:
   - type: Pda
-    id: CaptainIDCard
+    id: MercenaryCommanderIDCard
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
