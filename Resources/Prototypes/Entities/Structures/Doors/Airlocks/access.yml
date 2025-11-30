@@ -1295,3 +1295,86 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSyndicateAgent ]
+
+# mercenaries doors
+
+- type: entity
+  parent: AirlockMercenaries
+  id: AirlockMercenariesLocked
+  suffix: Mercenary, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenaries ]
+
+- type: entity
+  parent: AirlockMercenariesEngineer
+  id: AirlockMercenariesEngineerLocked
+  suffix: ExEngineer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenaryEngineer ]
+
+- type: entity
+  parent: AirlockMercenariesCommander
+  id: AirlockMercenariesCommanderLocked
+  suffix: Commander, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenaryCommander ]
+
+- type: entity
+  parent: AirlockMercenariesSergeant
+  id: AirlockMercenariesSergeantLocked
+  suffix: Sergeant, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenarySergeant ]
+
+- type: entity
+  parent: AirlockGlassMercenaries
+  id: AirlockGlassMercenariesLocked
+  suffix: Mercenaries, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenaries ]
+
+- type: entity
+  parent: AirlockMercenariesScientist
+  id: AirlockMercenariesScientistLocked
+  suffix: Scientist, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenaryScientist ]
+
+- type: entity
+  parent: AirlockMercenariesMedic
+  id: AirlockMercenariesMedicLocked
+  suffix: Medic, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenaryMedic ]
+
+- type: entity
+  parent: AirlockMercenariesSoldier
+  id: AirlockMercenariesSoldierLocked
+  suffix: Soldier, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenarySoldier ]
+
+- type: entity
+  parent: AirlockMercenariesRecruit
+  id: AirlockMercenariesRecruitLocked
+  suffix: Recruit, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenaryRecruit ]

@@ -49,6 +49,10 @@
   - GenpopEnter
   - GenpopLeave
   - Robotics #Goob
+  - Mercenary #Ramiles
+  - Expedition #Ramiles
+  - Commander #Ramiles
+  - Sergeant #Ramiles
 
 - type: accessGroup
   id: General

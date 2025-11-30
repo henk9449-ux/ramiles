@@ -330,3 +330,69 @@
   components:
   - type: AccessReader
     access: [["Security"], ["Command"]]
+
+#mercenary doors
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsMercenaries
+  suffix: Mercenary, Locked
+  components:
+  - type: AccessReader
+    access: [["Mercenary"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsMercenaryCommander
+  suffix: Commander, Locked
+  components:
+  - type: AccessReader
+    access: [["Commander"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsMercenarySergeant
+  suffix: Sergeant, Locked
+  components:
+  - type: AccessReader
+    access: [["Commander"],["Sergeant"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsMercenaryEngineer
+  suffix: ExEngineer, Locked
+  components:
+  - type: AccessReader
+    access: [["ExEngineer"],["Commander"],["Sergeant"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsMercenaryScientist
+  suffix: ExScientist, Locked
+  components:
+  - type: AccessReader
+    access: [["ExScientist"],["Commander"],["Sergeant"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsMercenarySoldier
+  suffix: ExSoldier, Locked
+  components:
+  - type: AccessReader
+    access: [["ExSoldier"],["Commander"],["Sergeant"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsMercenaryRecruit
+  suffix: ExRecruit, Locked
+  components:
+  - type: AccessReader
+    access: [["ExRecruit"],["Commander"],["Sergeant"],["ExSoldier"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsMercenaryMedic
+  suffix: ExMedic, Locked
+  components:
+  - type: AccessReader
+    access: [["ExMedic"],["Commander"],["Sergeant"]]
