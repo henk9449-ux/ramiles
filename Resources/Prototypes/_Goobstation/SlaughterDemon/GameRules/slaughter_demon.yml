@@ -54,7 +54,7 @@
       briefing:
         text: laughter-role-greeting
         color: Pink
-        sound: /Audio/_Goobstation/Vehicle/Clowncar/clowncar_fart.ogg
+        # sound: /Audio/_Goobstation/Vehicle/Clowncar/clowncar_fart.ogg
       components:
       - type: RandomMetadata
         nameSegments:

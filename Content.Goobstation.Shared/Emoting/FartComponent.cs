@@ -20,68 +20,68 @@ namespace Content.Goobstation.Shared.Emoting;
 // use as a template
 //[Serializable, NetSerializable, DataDefinition] public sealed partial class AnimationNameEmoteEvent : EntityEventArgs { }
 
-[RegisterComponent, NetworkedComponent]
-public sealed partial class FartComponent : Component
-{
-    [DataField]
-    public ProtoId<EmotePrototype>? Emote;
+//[RegisterComponent, NetworkedComponent]
+//public sealed partial class FartComponent : Component
+//{
+//    [DataField]
+//    public ProtoId<EmotePrototype>? Emote;
 
-    [DataField]
-    public bool FartTimeout;
+//    [DataField]
+//    public bool FartTimeout;
 
-    [DataField]
-    public bool FartInhale;
+//    [DataField]
+//    public bool FartInhale;
 
-    [DataField]
-    public bool SuperFarted;
+//    [DataField]
+//    public bool SuperFarted;
 
-    [DataField]
-    public float MolesAmmoniaPerFart = 5f;
+//    [DataField]
+//    public float MolesAmmoniaPerFart = 5f;
 
-    [DataField]
-    public Gas GasToFart = Gas.Ammonia;
+//    [DataField]
+//    public Gas GasToFart = Gas.Ammonia;
 
-    /// <summary>
-    ///     Path to the sound when you get bible smited
-    /// </summary>
-    [DataField]
-    [Access(Other = AccessPermissions.ReadWriteExecute)]
-    public SoundSpecifier BibleSmiteSnd = new SoundPathSpecifier("/Audio/_Goobstation/Effects/thunder_clap.ogg");
-}
+//    /// <summary>
+//    ///     Path to the sound when you get bible smited
+//    /// </summary>
+//    [DataField]
+//    [Access(Other = AccessPermissions.ReadWriteExecute)]
+//    public SoundSpecifier BibleSmiteSnd = new SoundPathSpecifier("/Audio/_Goobstation/Effects/thunder_clap.ogg");
+//}
 
-[Serializable, NetSerializable]
-public sealed partial class FartComponentState : ComponentState
-{
-    public ProtoId<EmotePrototype>? Emote;
-    public bool FartTimeout;
-    public bool FartInhale;
-    public bool SuperFarted;
+//[Serializable, NetSerializable]
+//public sealed partial class FartComponentState : ComponentState
+//{
+//    public ProtoId<EmotePrototype>? Emote;
+//    public bool FartTimeout;
+//    public bool FartInhale;
+//    public bool SuperFarted;
 
-    public FartComponentState(ProtoId<EmotePrototype>? emote, bool fartTimeout, bool fartInhale, bool superFarted)
-    {
-        Emote = emote;
-        FartTimeout = fartTimeout;
-        FartInhale = fartInhale;
-        SuperFarted = superFarted;
-    }
-}
+//    public FartComponentState(ProtoId<EmotePrototype>? emote, bool fartTimeout, bool fartInhale, bool superFarted)
+//    {
+//        Emote = emote;
+//        FartTimeout = fartTimeout;
+//        FartInhale = fartInhale;
+//        SuperFarted = superFarted;
+//    }
+//}
 
-/// <summary>
-///     Triggers after a fart 🦍💨
-/// </summary>
-public sealed class PostFartEvent : EntityEventArgs
-{
-    public readonly EntityUid Uid;
-    public readonly bool SuperFart;
-    public PostFartEvent(EntityUid uid, bool IsSuperFart = false)
-    {
-        Uid = uid;
-        SuperFart = IsSuperFart;
-    }
-}
+///// <summary>
+/////     Triggers after a fart 🦍💨
+///// </summary>
+//public sealed class PostFartEvent : EntityEventArgs
+//{
+//    public readonly EntityUid Uid;
+//    public readonly bool SuperFart;
+//    public PostFartEvent(EntityUid uid, bool IsSuperFart = false)
+//    {
+//        Uid = uid;
+//        SuperFart = IsSuperFart;
+//    }
+//}
 
-[Serializable, NetSerializable]
-public sealed class BibleFartSmiteEvent(NetEntity uid) : EntityEventArgs
-{
-    public NetEntity Bible = uid;
-}
+//[Serializable, NetSerializable]
+//public sealed class BibleFartSmiteEvent(NetEntity uid) : EntityEventArgs
+//{
+//    public NetEntity Bible = uid;
+//}

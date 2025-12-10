@@ -434,17 +434,6 @@
   - type: Wires
     layoutId: AirlockCommand
 
-# new mercenaries airlock engineers
-- type: entity
-  parent: Airlock
-  id: AirlockMercenariesEngineer
-  suffix: ExEngineer
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mercenaries.rsi
-  - type: Wires
-    layoutId: AirlockCommand
-
 # new mercenaries airlock standart commander
 - type: entity
   parent: Airlock
@@ -482,6 +471,28 @@
   - type: Wires
     layoutId: AirlockCommand
 
+# new mercenaries airlock engineers
+- type: entity
+  parent: Airlock
+  id: AirlockMercenariesEngineer
+  suffix: ExEngineer
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries_engineer.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+
+# mercenaries airlock engineers glass
+- type: entity
+  parent: AirlockGlass
+  id: AirlockGlassMercenariesEngineers
+  suffix: Mercenary
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/mercenaries_engineer.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+
 # new mercenaries scientist standart
 - type: entity
   parent: Airlock
@@ -489,7 +500,18 @@
   suffix: Scientist
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mercenaries.rsi
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries_scientist.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+
+# mercenaries airlock scientist glass
+- type: entity
+  parent: AirlockGlass
+  id: AirlockGlassMercenariesScientist
+  suffix: Mercenary
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/mercenaries_scientist.rsi
   - type: Wires
     layoutId: AirlockCommand
 
@@ -500,7 +522,18 @@
   suffix: Medic
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mercenaries.rsi
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries_medic.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+
+# mercenaries airlock medic glass
+- type: entity
+  parent: AirlockGlass
+  id: AirlockGlassMercenariesMedic
+  suffix: Mercenary
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/mercenaries_medic.rsi
   - type: Wires
     layoutId: AirlockCommand
 
@@ -511,7 +544,18 @@
   suffix: Soldier
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mercenaries.rsi
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries_soldier.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+
+# mercenaries airlock soldier glass
+- type: entity
+  parent: AirlockGlass
+  id: AirlockGlassMercenariesSoldier
+  suffix: Mercenary
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/mercenaries_soldier.rsi
   - type: Wires
     layoutId: AirlockCommand
 
@@ -522,7 +566,18 @@
   suffix: Recruit
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mercenaries.rsi
+    sprite: Structures/Doors/Airlocks/Standard/mercenaries_soldier.rsi
+  - type: Wires
+    layoutId: AirlockCommand
+
+# mercenaries airlock recruit glass
+- type: entity
+  parent: AirlockGlass
+  id: AirlockGlassMercenariesRecruit
+  suffix: Mercenary
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/mercenaries_soldier.rsi
   - type: Wires
     layoutId: AirlockCommand
 

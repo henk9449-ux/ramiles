@@ -1308,15 +1308,6 @@
       board: [ DoorElectronicsMercenaries ]
 
 - type: entity
-  parent: AirlockMercenariesEngineer
-  id: AirlockMercenariesEngineerLocked
-  suffix: ExEngineer, Locked
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsMercenaryEngineer ]
-
-- type: entity
   parent: AirlockMercenariesCommander
   id: AirlockMercenariesCommanderLocked
   suffix: Commander, Locked
@@ -1344,8 +1335,35 @@
       board: [ DoorElectronicsMercenaries ]
 
 - type: entity
+  parent: AirlockMercenariesEngineer
+  id: AirlockMercenariesEngineerLocked
+  suffix: ExEngineer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenaryEngineer ]
+
+- type: entity
+  parent: AirlockGlassMercenariesEngineers
+  id: AirlockGlassMercenariesEngineerLocked
+  suffix: ExEngineer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenaryEngineer ]
+
+- type: entity
   parent: AirlockMercenariesScientist
   id: AirlockMercenariesScientistLocked
+  suffix: Scientist, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenaryScientist ]
+
+- type: entity
+  parent: AirlockGlassMercenariesScientist
+  id: AirlockGlassMercenariesScientistLocked
   suffix: Scientist, Locked
   components:
   - type: ContainerFill
@@ -1362,6 +1380,15 @@
       board: [ DoorElectronicsMercenaryMedic ]
 
 - type: entity
+  parent: AirlockGlassMercenariesMedic
+  id: AirlockGlassMercenariesMedicLocked
+  suffix: Medic, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenaryMedic ]
+
+- type: entity
   parent: AirlockMercenariesSoldier
   id: AirlockMercenariesSoldierLocked
   suffix: Soldier, Locked
@@ -1371,8 +1398,26 @@
       board: [ DoorElectronicsMercenarySoldier ]
 
 - type: entity
+  parent: AirlockGlassMercenariesSoldier
+  id: AirlockGlassMercenariesSoldierLocked
+  suffix: Soldier, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenarySoldier ]
+
+- type: entity
   parent: AirlockMercenariesRecruit
   id: AirlockMercenariesRecruitLocked
+  suffix: Recruit, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMercenaryRecruit ]
+
+- type: entity
+  parent: AirlockGlassMercenariesRecruit
+  id: AirlockGlassMercenariesRecruitLocked
   suffix: Recruit, Locked
   components:
   - type: ContainerFill
