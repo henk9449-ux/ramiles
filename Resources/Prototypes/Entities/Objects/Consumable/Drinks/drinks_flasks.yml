@@ -78,6 +78,7 @@
 # SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 <ABOBA>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -212,3 +213,23 @@
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/vacuumflask.rsi
+
+# Mercenary flask
+
+- type: entity
+  parent: [FlaskBase, DrinkFlaskVisualsOpenable]
+  id: MercenaryFlask
+  suffix: Full
+  name: mercenary flask
+  description: military flask
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/mercenary_flask.rsi
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Water
+          Quantity: 50
+  - type: TrashOnSolutionEmpty
+    solution: drink
